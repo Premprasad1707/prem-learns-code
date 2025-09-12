@@ -36,13 +36,13 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/premprasad",
+      href: "https://github.com/Premprasad1707",
       color: "hover:text-gray-900"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/premprasad",
+      href: "https://www.linkedin.com/in/prem-prasad-632b8a301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "hover:text-blue-600"
     },
     {
