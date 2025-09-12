@@ -5,37 +5,37 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Python", level: 85, color: "bg-blue-500" },
-        { name: "SQL", level: 75, color: "bg-green-500" },
-        { name: "JavaScript", level: 60, color: "bg-yellow-500" },
-        { name: "R", level: 45, color: "bg-purple-500" },
+        { name: "Python", level: 90, color: "bg-primary" },
+        { name: "SQL", level: 80, color: "bg-accent" },
+        { name: "JavaScript", level: 65, color: "bg-secondary" },
+        { name: "R", level: 55, color: "bg-muted" },
       ]
     },
     {
       title: "Data Science & Analytics",
       skills: [
-        { name: "Pandas", level: 80, color: "bg-indigo-500" },
-        { name: "NumPy", level: 75, color: "bg-blue-600" },
-        { name: "Matplotlib", level: 85, color: "bg-red-500" },
-        { name: "Seaborn", level: 70, color: "bg-teal-500" },
+        { name: "Pandas", level: 85, color: "bg-primary" },
+        { name: "NumPy", level: 80, color: "bg-accent" },
+        { name: "Matplotlib", level: 90, color: "bg-secondary" },
+        { name: "Seaborn", level: 75, color: "bg-muted" },
       ]
     },
     {
       title: "Machine Learning",
       skills: [
-        { name: "Scikit-learn", level: 70, color: "bg-orange-500" },
-        { name: "TensorFlow", level: 45, color: "bg-amber-600" },
-        { name: "Statistical Analysis", level: 75, color: "bg-cyan-500" },
-        { name: "Data Mining", level: 65, color: "bg-pink-500" },
+        { name: "Scikit-learn", level: 75, color: "bg-primary" },
+        { name: "TensorFlow", level: 50, color: "bg-accent" },
+        { name: "Statistical Analysis", level: 80, color: "bg-secondary" },
+        { name: "Data Mining", level: 70, color: "bg-muted" },
       ]
     },
     {
       title: "Tools & Technologies",
       skills: [
-        { name: "Jupyter Notebook", level: 90, color: "bg-orange-400" },
-        { name: "Git & GitHub", level: 70, color: "bg-gray-700" },
-        { name: "Excel", level: 85, color: "bg-green-600" },
-        { name: "Power BI", level: 60, color: "bg-yellow-600" },
+        { name: "Jupyter Notebook", level: 95, color: "bg-primary" },
+        { name: "Git & GitHub", level: 75, color: "bg-accent" },
+        { name: "Excel", level: 90, color: "bg-secondary" },
+        { name: "Power BI", level: 65, color: "bg-muted" },
       ]
     }
   ];
