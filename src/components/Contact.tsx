@@ -6,7 +6,7 @@ const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    contact: "",
+    email: "",
     subject: "",
     message: ""
   });
@@ -63,23 +63,16 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create WhatsApp message
-    const message = `Hello! My name is ${formData.name}%0A%0ASubject: ${formData.subject}%0A%0AMessage: ${formData.message}%0A%0AContact: ${formData.contact}`;
-    const whatsappURL = `https://wa.me/919876543210?text=${message}`;
-    
-    // Open WhatsApp
-    window.open(whatsappURL, '_blank');
-    
-    // Show success toast
+    // Simulate form submission
     toast({
-      title: "Opening WhatsApp!",
-      description: "Your message has been prepared in WhatsApp.",
+      title: "Message Sent Successfully!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
     });
 
     // Reset form
     setFormData({
       name: "",
-      contact: "",
+      email: "",
       subject: "",
       message: ""
     });
@@ -166,7 +159,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="card-professional">
-            <h3 className="text-h3 mb-6 text-primary">Send WhatsApp Message</h3>
+            <h3 className="text-h3 mb-6 text-primary">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -187,18 +180,18 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="contact" className="block text-sm font-medium mb-2">
-                    Contact Number *
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    Email *
                   </label>
                   <input
-                    type="tel"
-                    id="contact"
-                    name="contact"
-                    value={formData.contact}
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
-                    placeholder="+91 XXXXX XXXXX"
+                    placeholder="your.email@example.com"
                   />
                 </div>
               </div>
