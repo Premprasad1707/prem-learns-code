@@ -34,13 +34,13 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center lg:justify-start space-x-6">
-            <a href="https://github.com/Premprasad1707" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/prem-prasad-632b8a301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:premprasad.dev@email.com" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
               <Mail size={24} />
             </a>
           </div>
