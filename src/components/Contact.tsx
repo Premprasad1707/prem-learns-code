@@ -46,10 +46,10 @@ const Contact = () => {
       color: "hover:text-blue-600"
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/premprasad",
-      color: "hover:text-blue-400"
+      icon: Mail,
+      label: "Email",
+      href: "mailto:premprasad1707@gmail.com",
+      color: "hover:text-green-600"
     }
   ];
 
@@ -63,10 +63,19 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simulate form submission
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const mailtoLink = `mailto:premprasad1707@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
     toast({
-      title: "Message Sent Successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Opening Email Client",
+      description: "Your email client will open with the pre-filled message.",
     });
 
     // Reset form

@@ -38,13 +38,29 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center lg:justify-start space-x-6">
-            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a 
+              href="https://github.com/Premprasad1707" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth"
+              title="View GitHub Profile"
+            >
               <Github size={24} />
             </a>
-            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a 
+              href="https://www.linkedin.com/in/prem-prasad-632b8a301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth"
+              title="Connect on LinkedIn"
+            >
               <Linkedin size={24} />
             </a>
-            <a href="#" className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth">
+            <a 
+              href="mailto:premprasad1707@gmail.com" 
+              className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-smooth"
+              title="Send Email"
+            >
               <Mail size={24} />
             </a>
           </div>
