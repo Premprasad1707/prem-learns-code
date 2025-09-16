@@ -24,13 +24,17 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-            <button className="btn-hero">
+            <a 
+              href="/Prem_Resume.pdf" 
+              download="Prem_Prasad_Resume.pdf"
+              className="btn-hero"
+            >
               <Download size={20} className="mr-2" />
               Download Resume
-            </button>
-            <button className="btn-outline">
+            </a>
+            <a href="#projects" className="btn-outline">
               View Projects
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center lg:justify-start space-x-6">

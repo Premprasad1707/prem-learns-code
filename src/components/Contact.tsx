@@ -15,19 +15,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "premprasad.dev@email.com",
-      href: "mailto:premprasad.dev@email.com"
+      value: "premprasad1707@gmail.com",
+      href: "mailto:premprasad1707@gmail.com"
     },
     {
       icon: Phone,
-      label: "Phone",
-      value: "+91 XXXXX XXXXX",
-      href: "tel:+91XXXXXXXXX"
+      label: "Phone", 
+      value: "+91 6370959392",
+      href: "tel:+916370959392"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "India",
+      value: "Hyderabad, Telangana, India",
       href: "#"
     }
   ];
@@ -149,10 +149,14 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-6">
                   Download my resume for a detailed overview of my experience and projects.
                 </p>
-                <button className="btn-hero w-full">
+                <a 
+                  href="/Prem_Resume.pdf" 
+                  download="Prem_Prasad_Resume.pdf"
+                  className="btn-hero w-full"
+                >
                   <Download size={20} className="mr-2" />
                   Download Resume
-                </button>
+                </a>
               </div>
             </div>
           </div>
